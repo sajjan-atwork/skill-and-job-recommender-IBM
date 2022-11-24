@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" >
+    <title>Profile</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='csss/bootstrap.min.css') }}" >
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='csss/core.css') }}" >
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='csss/style.css') }}" >
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='csss/responsive.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">We<em> Hire</em></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="/index" class="active">Home</a></li>
+                            <li><a href="/jobs">Jobs</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                              
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/about">About Us</a>
+                                    <a class="dropdown-item" href="/team">Team</a>
+                                    <a class="dropdown-item" href="/terms">Terms</a>
+                                </div>
+                            </li>
+                            <li><a href="/contact">Contact</a></li> 
+                            <li><a href="/recruit_user">Profile</a></li>
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+      <!--Main Wrapper Start-->
+      <section class="section section-bg" id="call-to-action" style="background-image: url(static/images/banner-image-1-1920x500.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cta-content">
+                        <br>
+                        <br>
+                        <h2>Your <em>Profile</em></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!--End of Breadcrumb Banner Area-->
+      <!--Start of Single Job Post Area-->
+      <div class="single-job-post-area ptb-130 ptb-sm-60">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <form action="/user_dashboard" method="POST">
+                <div class="single-job-content">
+                  <div class="title"><span>Profile</span></div>
+                  <div class="single-job-form">
+                    <div class="single-info mb-14 fix">
+                      <label class="uppercase pull-left m-0">photo</label>
+                      <div class="uploader fix pull-left fileupload">
+                        <input id="fileupload" name="fileupload" type="file" />
+                        <span class="filename">Upload your picture</span>
+                        <span class="action"
+                          ><i class="zmdi zmdi-folder"></i>Browse</span
+                        >
+                      </div>
+                    </div>
+                    <div class="single-info pb-14">
+                      <label for="f_name" class="uppercase pull-left m-0"
+                        >First Name</label
+                      >
+                      <div class="form-box fix">
+                        <input
+                          type="text"
+                          id="f_name"
+                          name="f_name"
+                          placeholder="Please enter your first name"
+                        />
+                      </div>
+                    </div>
+                    <div class="single-info pb-14">
+                      <label for="m_name" class="uppercase pull-left m-0"
+                        >Middle name</label
+                      >
+                      <div class="form-box fix">
+                        <input
+                          type="text"
+                          id="m_name"
+                          name="m_name"
+                          placeholder="Please enter your middle name"
+                        />
+                      </div>
+                    </div>
+                    <div class="single-info">
+                      <label for="l_name" class="uppercase pull-left m-0"
+                        >last name</label
+                      >
+                      <div class="form-box fix">
+                        <input
+                          type="text"
+                          id="l_name"
+                          name="l_name"
+                          placeholder="Please enter your last name"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="title"><span>Contact Information</span></div>
+                  <div class="single-job-form">
+                    <div class="single-info mb-14">
+                      <label for="country" class="uppercase pull-left m-0"
+                        >country</label
+                      >
+                      <div class="form-box fix">
+                        <input
+                          type="text"
+                          id="country"
+                          name="country"
+                          placeholder="Please enter your country name"
+                        />
+                      </div>
+                    </div>
+                    <div class="single-info mb-14">
+                      <label for="city" class="uppercase pull-left m-0"
+                        >city</label
+                      >
+                      <div class="form-box fix">
+                        <input
+                          type="text"
+                          id="city"
+                          name="city"
+                          placeholder="Please enter your city name"
+                        />
+                      </div>
+                    </div>
+                    <div class="single-info mb-14">
+                      <label for="address" class="uppercase pull-left m-0"
+                        >address</label
+                      >
+                      <div class="form-box fix">
+                        <input
+                          type="text"
+                          id="address"
+                          name="address"
+                          placeholder="Please enter your address"
+                        />
+                      </div>
+                    </div>
+                    <div class="single-info mb-14">
+                      <label for="phone" class="uppercase pull-left m-0"
+                        >phone</label
+                      >
+                      <div class="form-box fix">
+                        <input
+                          type="text"
+                          id="phone"
+                          name="phone"
+                          placeholder="Please enter your phone number"
+                        />
+                      </div>
+                    </div>
+                    <div class="single-info mb-14">
+                      <label for="email" class="uppercase pull-left m-0"
+                        >email</label
+                      >
+                      <div class="form-box fix">
+                        <input
+                          type="text"
+                          id="email"
+                          name="email"
+                          placeholder="Please enter your email"
+                        />
+                      </div>
+                    </div>
+                    <div class="single-info mb-14">
+                      <label for="website" class="uppercase pull-left m-0"
+                        >website</label
+                      >
+                      <div class="form-box fix">
+                        <input
+                          type="text"
+                          id="website"
+                          name="website"
+                          placeholder="Please enter your website"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="title"><span>Biography</span></div>
+                  <div class="single-job-form">
+                    <div class="single-info mb-14 fix">
+                      <label class="uppercase pull-left m-0">description</label>
+                      <div class="desc fix">
+                        <textarea
+                          name="textarea"
+                          class="fix textarea"
+                          cols="30"
+                          rows="10"
+                          placeholder="Please enter description"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="title"><span>Education</span></div>
+                  <div class="single-job-form">
+                    <div class="single-info mb-14">
+                      <label for="school_name" class="uppercase pull-left m-0"
+                        >College name</label>
+                      <div class="form-box fix">
+                        <input
+                          type="text"
+                          id="school_name"
+                          name="school_name"
+                          placeholder="Please enter your College name"
+                        />
+                      </div>
+                    </div>
+                    <div class="single-info mb-14">
+                      <label for="school_name" class="uppercase pull-left m-0"
+                        >degree</label
+                      >
+                      <div class="form-box fix">
+                        <input
+                          type="text"
+                          id="degree"
+                          name="degree"
+                          placeholder="Please enter your degree"
+                        />
+                      </div>
+                    </div>
+                    <div class="single-info mb-14 fix">
+                      <label class="uppercase pull-left m-0">description</label>
+                      <div class="desc fix">
+                        <textarea
+                          name="textarea1"
+                          class="fix small textarea"
+                          cols="30"
+                          rows="10"
+                          placeholder="Please enter description"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="title"><span>Experience</span></div>
+                  <div class="single-job-form mb-0">
+                    <div class="single-info pb-14">
+                      <label for="title" class="uppercase pull-left m-0"
+                        >Job Title</label
+                      >
+                      <div class="form-box fix">
+                        <input
+                          type="text"
+                          id="title"
+                          name="title"
+                          placeholder="Enter your title"
+                        />
+                      </div>
+                    </div>
+                    <div class="single-info mb-14">
+                      <label for="date_from" class="uppercase pull-left m-0"
+                        >date from</label
+                      >
+                      <div class="form-box fix">
+                        <input
+                          type="text"
+                          id="date_from"
+                          name="date_from"
+                          placeholder="Please enter date"
+                        />
+                      </div>
+                    </div>
+                    <div class="single-info mb-14">
+                      <label for="date_to" class="uppercase pull-left m-0"
+                        >date to</label
+                      >
+                      <div class="form-box fix">
+                        <input
+                          type="text"
+                          id="date_to"
+                          name="date_to"
+                          placeholder="Please enter date"
+                        />
+                      </div>
+                    </div>
+                    <div class="single-info fix">
+                      <label class="uppercase pull-left m-0"
+                        >description
+                      </label>
+                      <div class="desc fix">
+                        <textarea
+                          name="textarea2"
+                          class="fix small textarea"
+                          cols="30"
+                          rows="10"
+                          placeholder="Please enter description"
+                        ></textarea>
+                        <div class="resubtn mt-40">
+                          <input type="submit" value="Save Info">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of Single Job Post Area-->
+      <!-- ***** Footer Start ***** -->
+    <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <p>
+                      Copyright © 2022 WEHIRE.com
+                  </p>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- jQuery -->
+  <script src="{{ url_for('static', filename='js/jquery-2.1.0.min.js') }}"></script>
+
+  <!-- Bootstrap -->
+  <script src="{{ url_for('static', filename='js/popper.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+  <!-- Plugins -->
+  <script src="{{ url_for('static', filename='js/scrollreveal.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/waypoints.min.j') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/imgfix.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/mixitup.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/accordions.js') }}"></script>
+
+  <!-- Global Init -->
+  <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+    
+  </body>
+</html>
