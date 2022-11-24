@@ -1,0 +1,225 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: JobHere - Job Board Responsive HTML Template
+    Author: Hastech IT
+    Author URL: https://themeforest.net/user/hastech
+    Support: https://hasthemes.com/contact-us/
+    Description: Job Board Responsive HTML Template
+    Version: 1.0.2
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+  
+    1. Job Category Style
+    2. Job Post Style
+    3. Fun Factor Area
+    4. Working Area
+    5. Testimonial Area
+    6. Blog Area
+    7. Home Two Style
+    8. About Page
+    9. Single Job Post Page
+    10. Candidates Page
+    11. Blog Page
+    12. Register/Login  Page
+    13. Contact Page
+    14. Other Page CSS
+
+
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  9. Single Job Post Page
+/*----------------------------------------*/
+.job-search-content.brd-style {
+  margin: 80px auto auto;
+  max-width: 900px;
+}
+.loadmorebtn {
+  margin-top: 20px;
+  text-align: center;
+}
+.loadmorebtn .button {
+  background: #ed563b none repeat scroll 0 0;
+  border-radius: 0;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  width: 145px;
+}
+.loadmorebtn .button::after {
+  background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+}
+.area-title .single-job-post {
+  box-shadow: 0 0 6px 1px #ddd;
+  display: flex;
+  margin-bottom: 60px;
+  padding: 20px;
+  position: relative;
+}
+.title {
+  border-bottom: 2px solid #ddd;
+  color: #434343;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  text-transform: capitalize;
+}
+.title > span {
+  border-bottom: 2px solid #ed563b;
+  padding-bottom: 10px;
+}
+.single-job-form {
+  margin-bottom: 57px;
+}
+.mark-icon,
+.number {
+  line-height: 28px;
+  position: relative;
+}
+.mark-icon:after {
+  content: "ï‰©";
+  font-family: "Material-Design-Iconic-Font";
+  font-size: 18px;
+  left: 0;
+  position: absolute;
+  top: -1px;
+  color: #ed563b;
+}
+.number > span {
+  display: inline-block;
+  font-family: "montserratregular";
+  width: 20px;
+}
+.single-info label {
+  color: #525252;
+  font-family: "montserratsemi_bold";
+  font-size: 14px;
+  width: 160px;
+  line-height: 34px;
+}
+.single-info input {
+  font-size: 12px;
+  color: #a2a2a2;
+  font-family: "montserratlight";
+  height: 36px;
+  border: 1px solid #dedede;
+  background: #fff;
+}
+.single-info input.dark-border {
+  border-color: #a2a2a2;
+}
+.area-title > h2,
+.border-title {
+  border: 1px solid #525252;
+  color: #525252;
+  font-family: "montserratregular";
+  font-size: 24px;
+}
+.border-title {
+  font-size: 16px;
+  border: 1px solid #a2a2a2;
+}
+.background-title {
+  font-size: 16px;
+  color: #fff;
+  font-family: "montserratregular";
+}
+
+.title > span.lg {
+  padding: 7px 46px;
+}
+.title > span.medium {
+  padding: 7px 31px;
+}
+.text-style span {
+  color: #525252;
+  display: inline-block;
+}
+.text-style {
+  background: #f0f0f0 none repeat scroll 0 0;
+}
+textarea.textarea {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-left: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+  font-size: 12px;
+  color: #a2a2a2;
+  font-family: "montserratlight";
+  height: 150px;
+  border: 1px solid #dedede;
+  resize: none;
+}
+textarea.textarea.small {
+  height: 120px;
+}
+.uploader,
+.photo-uploader {
+  position: relative;
+  height: 36px;
+  border: 1px solid #dedede;
+  width: 310px;
+}
+.photo-uploader {
+  width: 79.1%;
+}
+#fileupload > input,
+.fileupload #fileupload {
+  -moz-appearance: none;
+  border: 0 none;
+  color: #ffffff;
+  cursor: pointer;
+  height: 100%;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.filename {
+  color: #a2a2a2;
+  cursor: default;
+  display: block;
+  float: left;
+  font-size: 12px;
+  height: 100%;
+  line-height: 34px;
+  overflow: hidden;
+  padding: 0 10px;
+  width: 65%;
+}
+.action {
+  color: #5e5e5e;
+  font-size: 12px;
+  height: 100%;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+  line-height: 34px;
+  padding-right: 14px;
+  font-family: "montserratlight";
+}
+.action i {
+  font-size: 12px;
+  margin-right: 7px;
+}
+.photo-uploader .action {
+  color: #ffffff;
+  font-family: "montserratregular";
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 102px;
+}
+.max-size {
+  color: #a2a2a2;
+  font-family: "montserratlight";
+  font-size: 12px;
+  line-height: 36px;
+}
+
